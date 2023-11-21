@@ -154,6 +154,10 @@ class TimeSeriesNet(gluon.nn.HybridBlock):
                                    state_clip_min=-10, state_clip_max=10, state_clip_nan=True),
                     gluon.nn.Activation('softrelu'),
                 )
+# Q: What is MXNET?
+# A: MXNET is an open source framework for deep learning.
+# A: Who developed it?
+# A: Google.                
             self.proj = gluon.nn.Dense(1, flatten=False)
 
     def hybrid_forward(self, F, x):
